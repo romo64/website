@@ -6,8 +6,9 @@
     <title>Formula1</title>
     <link rel="shortcut icon" href="images/f1.ico">
     <link rel="stylesheet" href="estilo.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="estilo2.css">
+    <script defer src="funciones.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
     <header id="general" class="general">
@@ -18,13 +19,13 @@
             </div>
             <ul class="nav_link nav_link--menu">
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Inicio</a>
+                    <a href="index.html" class="nav_links">Inicio</a>
                 </li>
                 <li class="nav_items">
                     <a href="contacto.html#form" class="nav_links">Contacto</a>
                 </li>
                 <li class="nav_items">
-                    <a href="escuderias.html#container-slider" class="nav_links">Escuderias</a>
+                    <a href="#" class="nav_links">Escuderias</a>
                 </li>
                 <li class="nav_items">
                     <a href="acercade.html#redes" class="nav_links">Acerca de</a>
@@ -32,7 +33,7 @@
                 <li class="nav_items">
                     <a href="registro.html#registroint" id="accesoUsuario" class="nav_links">Acceso a tu cuenta</a>
                 </li>
-                
+
                 <img src="images/cerrar-menu.png" class="nav_cerrar" alt="">
             </ul>
 
@@ -44,52 +45,48 @@
         <section class="video container">
             <video class="video_menu" autoplay="video" src="images/video.webm" loop muted></video>
         </section>
-
     </header>
 
-    <main>
-        <section id="redes" class="container detalle">
-            <h2 class="subtitulo">Redes Sociales    </h2>
-            <p class="detalle_parrafo">Multimedia</p>
+    <section id="container-slider" class="container galeria-general">
+    <!--<section id="galeria-img" class="container galeria-general">-->
         
-            <div class="detalle_main">
-                <a href="https://www.instagram.com/f1/?hl=es-la" style="text-decoration: none;" target="_blank">
-                <article class="detalle_iconos">
-                    <img src="images/logo2.png" class="detalle_icono">
-                    <h3 class="detalle_titulo">Instagram</h3>
-                    <p class="detalle_parrafo">Ingresa a nuestro instagram</p>
-                </article>
-                </a>
+        <div class="ful-img" id="fulImgBox">
+                <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                
+                <img src="#" id="fulImg" alt="">
+            <span onclick="closeImg()">X</span>
+        </div>
 
-                <a href="https://wa.me/+543416588984/?text=Hola%20!%20Te%20escribo%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web%20de%20F1" style="text-decoration: none;" target="_blank">
-                <article class="detalle_iconos">
-                    <img src="images/logo3.png" class="detalle_icono">
-                    <h3 class="detalle_titulo">WhatsApp</h3>
-                    <p class="detalle_parrafo">Escribenos a nuestro WhatsApp</p>
-                </article>
-                </a>
-                <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg" style="text-decoration: none;" target="_blank">
-                <article class="detalle_iconos">
-                    <img src="images/logo4.png" class="detalle_icono">
-                    <h3 class="detalle_titulo">YouTube</h3>
-                    <p class="detalle_parrafo">Mira nuestros videos en YouTube</p>
-                </article>
-                </a>
-            </div>
-        </section>
-    </main>
+        <h1><samp>Galeria de Imagenes</samp></h1>
+
+        <div class="imagen-galeria">
+            <img src="images/escuderias/mercedes.jpg" onclick="openImg(1)" alt="">
+            <img src="images/escuderias/ferrari.jpg" onclick="openImg(2)" alt="">
+            <img src="images/escuderias/redbulll.jpg" onclick="openImg(3)" alt="">
+            <img src="images/escuderias/mclaren.jpeg" onclick="openImg(4)" alt="">
+            <img src="images/escuderias/aston.jpg" onclick="openImg(5)" alt="">
+            <img src="images/escuderias/alpine.jpeg" onclick="openImg(6)" alt="">
+            <img src="images/escuderias/haas.svg" onclick="openImg(7)" alt="">
+            <img src="images/escuderias/alfa.jpg" onclick="openImg(8)" alt="">
+            <img src="images/escuderias/alpha.webp" onclick="openImg(9)" alt="">
+            <img src="images/escuderias/will.jpeg" onclick="openImg(10)" alt="">
+        </div>
+    </section>
 
 </body>
 </html>
+
 <script>
     const nombreUsuario = JSON.parse(localStorage.getItem('login_success'))
     const user = JSON.parse(localStorage.getItem('login_success')) || false
     const botonLogin = document.getElementById('accesoUsuario')
-
+    
     if(user){
         botonLogin.innerHTML = nombreUsuario
-        document.getElementById('accesoUsuario').href = 'login.html#cambioForm'
+        document.getElementById('accesoUsuario').href = 'login.html'
     }
 </script>
 <script src="escu.js"></script>
+<script src="script-img.js"></script>
 <script src="menu.js"></script>

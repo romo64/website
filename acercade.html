@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula1</title>
+    <link rel="shortcut icon" href="images/f1.ico">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="acercade.css">
+</head>
+<body>
+    <header id="general" class="general">
+        <nav class="nav">
+            <div class="nav_logo">
+                <!--<h2 class="nav_titulo">Pagina F1</h2>-->
+                <img src="images/logof1.png" class="nav_titulo" alt="" width="80px">
+            </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="index.html" class="nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="contacto.html#form" class="nav_links">Contacto</a>
+                </li>
+                <li class="nav_items">
+                    <a href="escuderias.html#container-slider" class="nav_links">Escuderias</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Acerca de</a>
+                </li>
+                <li class="nav_items">
+                    <a href="registro.html#registroint" id="accesoUsuario" class="nav_links">Acceso a tu cuenta</a>
+                </li>
+
+                <img src="images/cerrar-menu.png" class="nav_cerrar" alt="">
+            </ul>
+
+            <div class="nav_menu">
+                <img src="images/menu-hamb.png" class="nav_img" alt="">
+            </div>
+        </nav>
+
+        <section class="video container">
+            <video class="video_menu" autoplay="video" src="images/video.webm" loop muted></video>
+        </section>
+
+    </header>
+
+    <main>
+        <section id="redes" class="container detalle">
+            <h2 class="subtitulo">Acerca de</h2>
+            <div class="centro-total total-centro">
+                <article class="total-img">
+                    <img src="images/ds-img.jpg" alt="" />
+                </article>
+                <article class="about"> 
+                <!-- btn container -->
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="history">Instituto</button>
+                        <button class="tab-btn" data-id="vision">Web</button>
+                        <button class="tab-btn" data-id="goals">Desarrollador</button>
+                    </div>
+                    <div class="total-contenido">
+                    <!-- single item -->
+                    <div class="content active" id="history">
+                        <h4>Instituto</h4>
+                        <p>
+                        Escuela Superior de Comercio N° 49 “Cap. Gral. J. J. de Urquiza.<br>
+                        Nivel Terciario. Especialidad:<br>
+                        "Técnico Superior en Desarrollo de Sistemas"<br><br>
+                        Bv. Oroño 690 - (2000) Rosario - Santa Fe - Argentina
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                    <!-- single item -->
+                    <div class="content" id="vision">
+                        <h4>Web</h4>
+                        <p>
+                        Pagina web acerca de competición de automovilismo internacional más popular y prestigiosa 
+                        FORMULA 1<br>
+                        La entidad que la dirige es la Federación Internacional del Automóvil (FIA).<br>
+                        <br>
+                        Podras crearte una cuenta personal y modificar tu perfil.<br>
+                        Acceder a la multimedia, como nuestras redes de Instagram, videos de YouTube y linea de WhatsApp para mayor informacion<br>
+                        Tambien disponemos de una galeria de imagenes, organizada por las distintas escuderias.
+                        <br>
+                        Y finalmente un apartado de contacto, donde podras llenar el formulario y recibiremos mensaje en nuestra casilla de correo.
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                    <!-- single item -->
+                    <div class="content" id="goals">
+                        <h4>Desarrollo</h4>
+                        <p>
+                        Pagina web desarrollada por el estudiante Dominguez Santiago.
+                        De primer año de Tecnico Superior en desarrollo de sistemas.
+                        <br>Para la materia de Logica y estructura de datos, como trabajo final del segundo cuatrimestre.
+                        A cargo del profesor Rodrigo Barcelo.
+                        </p>
+                        </div>
+                    <!-- end of single item -->
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+<script>
+    const nombreUsuario = JSON.parse(localStorage.getItem('login_success'))
+    const user = JSON.parse(localStorage.getItem('login_success')) || false
+    const botonLogin = document.getElementById('accesoUsuario')
+
+    if(user){
+        botonLogin.innerHTML = nombreUsuario
+        document.getElementById('accesoUsuario').href = 'login.html#cambioForm'
+    }
+</script>
+<script src="escu.js"></script>
+<script src="app.js"></script>
+<script src="menu.js"></script>

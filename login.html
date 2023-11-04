@@ -18,7 +18,7 @@
             </div>
             <ul class="nav_link nav_link--menu">
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Inicio</a>
+                    <a href="index.html" class="nav_links">Inicio</a>
                 </li>
                 <li class="nav_items">
                     <a href="contacto.html#form" class="nav_links">Contacto</a>
@@ -30,9 +30,9 @@
                     <a href="acercade.html#redes" class="nav_links">Acerca de</a>
                 </li>
                 <li class="nav_items">
-                    <a href="registro.html#registroint" id="accesoUsuario" class="nav_links">Acceso a tu cuenta</a>
+                    <a href="#registro" id="accesoUsuario" class="nav_links">Acceso a tu cuenta</a>
                 </li>
-                
+
                 <img src="images/cerrar-menu.png" class="nav_cerrar" alt="">
             </ul>
 
@@ -46,50 +46,55 @@
         </section>
 
     </header>
-
     <main>
-        <section id="redes" class="container detalle">
-            <h2 class="subtitulo">Redes Sociales    </h2>
-            <p class="detalle_parrafo">Multimedia</p>
-        
-            <div class="detalle_main">
-                <a href="https://www.instagram.com/f1/?hl=es-la" style="text-decoration: none;" target="_blank">
-                <article class="detalle_iconos">
-                    <img src="images/logo2.png" class="detalle_icono">
-                    <h3 class="detalle_titulo">Instagram</h3>
-                    <p class="detalle_parrafo">Ingresa a nuestro instagram</p>
-                </article>
-                </a>
-
-                <a href="https://wa.me/+543416588984/?text=Hola%20!%20Te%20escribo%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web%20de%20F1" style="text-decoration: none;" target="_blank">
-                <article class="detalle_iconos">
-                    <img src="images/logo3.png" class="detalle_icono">
-                    <h3 class="detalle_titulo">WhatsApp</h3>
-                    <p class="detalle_parrafo">Escribenos a nuestro WhatsApp</p>
-                </article>
-                </a>
-                <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg" style="text-decoration: none;" target="_blank">
-                <article class="detalle_iconos">
-                    <img src="images/logo4.png" class="detalle_icono">
-                    <h3 class="detalle_titulo">YouTube</h3>
-                    <p class="detalle_parrafo">Mira nuestros videos en YouTube</p>
-                </article>
-                </a>
-            </div>
+        <section id="menu" class="container detalle">
+            <h2 class="subtitulo">Selecciona tu escuderia    </h2>
+            
+            <div class="formulario-escuderia">
+                <div class="formulario-informacion-menor">
+                    <form id="cambioForm" class="form-registro">
+                        <label>
+                            <i class='bx bx-car'></i>
+                            <select name="cambioEscuderia" id="cambioEscuderia" required>
+                                <option value="">Escuderia</option>
+                                <option value="mercedes">Mercedes AMG</option>
+                                <option value="ferrari">Scuderia Ferrari</option>
+                                <option value="redbull">Red Bull Racing</option>
+                            </select>
+                        </label>
+                        <input type="submit" value="Cambiar escuderia">
+                    </form>    
+                </div>
+            </div><br><br>
+            <button id="logout" class="cta" >LogOut</button>
+            
         </section>
     </main>
 
+
 </body>
 </html>
+
 <script>
     const nombreUsuario = JSON.parse(localStorage.getItem('login_success'))
     const user = JSON.parse(localStorage.getItem('login_success')) || false
     const botonLogin = document.getElementById('accesoUsuario')
 
-    if(user){
-        botonLogin.innerHTML = nombreUsuario
-        document.getElementById('accesoUsuario').href = 'login.html#cambioForm'
+    if(!user){
+        window.location.href = 'registro.html'
     }
+    botonLogin.innerHTML = nombreUsuario
+    document.getElementById('accesoUsuario').href = 'login.html'
+
+    const logout = document.querySelector('#logout')
+    logout.addEventListener('click', ()=>{
+        alert('Hasta pronto!')
+        localStorage.removeItem('login_success')
+        localStorage.removeItem('escuderia')
+        window.location.href = 'registro.html'
+    })
+
 </script>
 <script src="escu.js"></script>
+<script src="cambio.js"></script>
 <script src="menu.js"></script>
