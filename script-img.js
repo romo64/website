@@ -10,31 +10,31 @@ function openImg(esc){
         fulImg.src="images/equipos/mercedes.jpg"
     }else if(esc==2){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/ferrari.JPG"
+        fulImg.src="images/equipos/ferrari.jpg"
     }else if(esc==3){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/redbull.JPG"
+        fulImg.src="images/equipos/redbull.jpg"
     }else if(esc==4){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/mclaren.JPG"
+        fulImg.src="images/equipos/mclaren.jpg"
     }else if(esc==5){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/aston.JPG"
+        fulImg.src="images/equipos/aston.jpg"
     }else if(esc==6){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/alpine.JPG"
+        fulImg.src="images/equipos/alpine.jpg"
     }else if(esc==7){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/haas.JPG"
+        fulImg.src="images/equipos/haas.jpg"
     }else if(esc==8){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/alfa.JPG"
+        fulImg.src="images/equipos/alfa.jpg"
     }else if(esc==9){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/alpha.JPG"
+        fulImg.src="images/equipos/alpha.jpg"
     }else if(esc==10){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/will.JPG"
+        fulImg.src="images/equipos/will.jpg"
     }
 }
 
@@ -69,7 +69,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==2){
         if(foto==2){
-            fulImg.src="images/equipos/ferrari.JPG"
+            fulImg.src="images/equipos/ferrari.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/ferrari2.JPG"
         }
@@ -78,7 +78,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==3){
         if(foto==2){
-            fulImg.src="images/equipos/redbull.JPG"
+            fulImg.src="images/equipos/redbull.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/redbull2.JPG"
         }
@@ -87,7 +87,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==4){
         if(foto==2){
-            fulImg.src="images/equipos/mclaren.JPG"
+            fulImg.src="images/equipos/mclaren.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/mclaren2.JPG"
         }
@@ -96,7 +96,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==5){
         if(foto==2){
-            fulImg.src="images/equipos/aston.JPG"
+            fulImg.src="images/equipos/aston.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/aston2.JPG"
         }
@@ -105,7 +105,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==6){
         if(foto==2){
-            fulImg.src="images/equipos/alpine.JPG"
+            fulImg.src="images/equipos/alpine.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/alpine2.JPG"
         }
@@ -114,7 +114,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==7){
         if(foto==2){
-            fulImg.src="images/equipos/haas.JPG"
+            fulImg.src="images/equipos/haas.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/haas2.JPG"
         }
@@ -123,7 +123,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==8){
         if(foto==2){
-            fulImg.src="images/equipos/alfa.JPG"
+            fulImg.src="images/equipos/alfa.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/alfa2.JPG"
         }
@@ -132,7 +132,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==9){
         if(foto==2){
-            fulImg.src="images/equipos/alpha.JPG"
+            fulImg.src="images/equipos/alpha.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/alpha2.JPG"
         }
@@ -141,7 +141,7 @@ function funcionEjecutar(side){
         }
     }else if(totalImg==10){
         if(foto==2){
-            fulImg.src="images/equipos/will.JPG"
+            fulImg.src="images/equipos/will.jpg"
         }else if(foto==1){
             fulImg.src="images/equipos/will2.JPG"
         }
