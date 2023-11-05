@@ -10,31 +10,31 @@ function openImg(esc){
         fulImg.src="images/equipos/mercedes.jpg"
     }else if(esc==2){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/ferrari.jpg"
+        fulImg.src="images/equipos/ferrari.JPG"
     }else if(esc==3){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/redbull.jpg"
+        fulImg.src="images/equipos/redbull.JPG"
     }else if(esc==4){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/mclaren.jpg"
+        fulImg.src="images/equipos/mclaren.JPG"
     }else if(esc==5){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/aston.jpg"
+        fulImg.src="images/equipos/aston.JPG"
     }else if(esc==6){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/alpine.jpg"
+        fulImg.src="images/equipos/alpine.JPG"
     }else if(esc==7){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/haas.jpg"
+        fulImg.src="images/equipos/haas.JPG"
     }else if(esc==8){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/alfa.jpg"
+        fulImg.src="images/equipos/alfa.JPG"
     }else if(esc==9){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/alpha.jpg"
+        fulImg.src="images/equipos/alpha.JPG"
     }else if(esc==10){
         fulImgBox.style.display = 'flex';
-        fulImg.src="images/equipos/will.jpg"
+        fulImg.src="images/equipos/will.JPG"
     }
 }
 
